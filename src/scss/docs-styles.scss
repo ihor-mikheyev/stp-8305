@@ -1,0 +1,35 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $_secondary_color;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Luckiest Guy', cursive;
+  color: $_header_color;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 20px;
+}
+article {
+  margin-bottom: 40px;
+}
+p:not(:last-child) {
+  margin-bottom: 20px;
+}
+div > p {
+  margin-bottom: 0 !important;
+}
+ul {
+  list-style: disc;
+  margin-left: 16px;
+}
+li > a {
+  color: $_secondary_header_color;
+  text-decoration: none;
+}
