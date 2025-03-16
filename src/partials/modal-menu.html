@@ -1,28 +1,18 @@
-<header class="header">
-  <div class="header-container container">
-    <a href="./index" class="logo">
-      <img
-        src="./img/header/logo.png"
-        alt="logo"
-        class="logo-img"
-        width="32"
-        height="32"
-      /><span class="logo-span">Match Villains</span>
-    </a>
-
-    <button data-modal-open class="menu-open-btn" type="button" id="toggleMenu">
+<div class="modal-overlay" data-modal id="mobileMenu">
+  <div class="modal">
+    <button class="mobile-menu-close-btn" type="button" data-modal-close>
       <svg
-        class="menu-open-btn-icon"
-        width="42"
-        height="20"
-        aria-label="mobile menu open button"
+        class="mobile-menu-close-icon"
+        width="29"
+        height="29"
+        aria-label="icon close"
       >
-        <use href="./img/sprite.svg#icon-menu "></use>
+        <use href="./img/sprite.svg#icon-x"></use>
       </svg>
     </button>
 
-    <nav class="nav">
-      <ul class="nav-list">
+    <nav class="nav-modal">
+      <ul class="nav-list-modal">
         <li class="nav-list-item">
           <a href="#home" class="nav-list-link">HOME</a>
         </li>
@@ -44,4 +34,4 @@
       </ul>
     </nav>
   </div>
-</header>
+</div>

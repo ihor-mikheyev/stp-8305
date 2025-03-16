@@ -1,0 +1,71 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out,
+    top 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+  padding-top: 48px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(90px);
+  background-color: #ddd6ed;
+  overflow-y: auto;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: #ddd6ed;
+  background-color: inherit;
+  outline: transparent;
+  border: none;
+}
+
+.nav-list-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.nav-list-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1e0e40;
+}
+@media only screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+  .nav-list-link {
+    font-size: 16px;
+    color: #ddd6ed;
+  }
+}
