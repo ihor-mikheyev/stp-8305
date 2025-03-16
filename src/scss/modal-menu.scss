@@ -31,6 +31,11 @@
   height: 100%;
   backdrop-filter: blur(90px);
   background-color: #ddd6ed;
+
+  background-image: url(../img/menu/picture1.png), url(../img/menu/picture2.png);
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 320px), right calc(100% - 130px);
+
   overflow-y: auto;
   transition: background-color 0.25s ease-in-out;
 }
