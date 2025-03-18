@@ -11,6 +11,11 @@
   display: flex;
 }
 
+.faq-item {
+  border-bottom: solid 0.5px #ffffff4d;
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
 .faq-title-btn {
   display: flex;
 }
@@ -40,6 +45,13 @@
   font-weight: 600;
   line-height: 1.22;
   padding-bottom: 4px;
+}
+
+.accordion-btn {
+  background-color: transparent;
+  stroke: #ddd6ed;
+  fill: transparent;
+  border: none;
 }
 
 .faq-list-text {
