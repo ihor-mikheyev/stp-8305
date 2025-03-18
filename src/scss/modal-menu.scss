@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -34,7 +38,8 @@
 
   background-image: url(../img/menu/picture1.png), url(../img/menu/picture2.png);
   background-repeat: no-repeat;
-  background-position: left calc(100% - 320px), right calc(100% - 130px);
+  background-position: left 0% bottom 50%, right 0% bottom 10%;
+  background-attachment: fixed;
 
   overflow-y: auto;
   transition: background-color 0.25s ease-in-out;
@@ -42,6 +47,7 @@
 
 .mobile-menu-close-btn {
   position: absolute;
+
   top: 16px;
   right: 16px;
   fill: #ddd6ed;
@@ -59,7 +65,7 @@
   padding-right: 40px;
 }
 
-.nav-list-link {
+.nav-list-link-modal {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -69,7 +75,7 @@
   .menu-open-btn {
     display: none;
   }
-  .nav-list-link {
+  .nav-list-link-modal {
     font-size: 16px;
     color: #ddd6ed;
   }

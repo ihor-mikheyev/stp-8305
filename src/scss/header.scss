@@ -53,14 +53,23 @@
 .menu-open-btn {
   background-color: transparent;
   border: 2px;
-  padding: 0;
+
   stroke: #ddd6ed;
   line-height: 0;
 }
 
 .menu-open-btn-icon {
-  width: 42px;
-  height: 22px;
+  align-items: center;
+
+  padding-right: 0;
+}
+
+.modal-overlay.is-open .menu-open-btn-icon {
+  display: none;
+}
+
+.modal-overlay.is-open .mobile-menu-close-icon {
+  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
