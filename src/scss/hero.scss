@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 72px;
+  padding-top: 155px;
   padding-bottom: 60px;
 }
 .hero-body {
@@ -10,6 +10,21 @@
 
 @include media(desktop) {
   .hero-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0 24px;
+  }
+  .hero-image {
+    width: 100%;
+    grid-area: 1/2/4;
+  }
+  .hero-image:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .hero-title {
+    height: 230px;
+    align-self: flex-end;
   }
 }
 
@@ -26,6 +41,7 @@
 
   .hero-text {
     font-size: 20px;
+    height: fit-content;
   }
 }
 .hero-text:not(:last-child) {
@@ -39,6 +55,7 @@
   margin-bottom: 28px;
 }
 .hero-link {
+  height: fit-content;
 }
 .play-icon {
 }
