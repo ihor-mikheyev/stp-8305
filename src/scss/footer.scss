@@ -30,6 +30,15 @@ footer {
   font-size: 24px;
   color: $_main_color;
 }
+
+.footer-link::after {
+  content: '|';
+  margin-left: 8px;
+}
+
+.footer-link:last-child::after {
+}
+
 .link {
 }
 .footer-text {

@@ -1,0 +1,62 @@
+.popup {
+  position: absolute;
+  background-color: $_secondary_bg_color;
+  padding: 24px 0;
+}
+@include media(desktop) {
+  .popup {
+    padding: 52px 0;
+  }
+  .popup-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 116px;
+  }
+}
+.popup-body {
+}
+
+.popup-title {
+  font-family: 'Luckiest Guy', cursive;
+  color: $_main_color;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+@include media(desktop) {
+  .popup-title {
+    font-size: 52px;
+    margin-bottom: 16px;
+  }
+}
+.popup-text {
+  color: $_main_color;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+@include media(desktop) {
+  .popup-text {
+    font-size: 24px;
+  }
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.button-popup {
+  padding: 10px 24px;
+  color: $_main_color;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: $_header_accent_color;
+  border-radius: 100px;
+  border: none;
+}
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid $_header_accent_color;
+}
