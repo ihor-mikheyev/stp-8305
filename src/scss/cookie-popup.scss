@@ -1,5 +1,7 @@
 .popup {
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   background-color: $_secondary_bg_color;
   padding: 24px 0;
 }
@@ -37,6 +39,7 @@
 @include media(desktop) {
   .popup-text {
     font-size: 24px;
+    line-height: 120%;
   }
 }
 
@@ -55,6 +58,12 @@
   background-color: $_header_accent_color;
   border-radius: 100px;
   border: none;
+}
+
+@include media(desktop) {
+  .button-popup {
+    padding: 18px 0;
+  }
 }
 .button-transparent {
   background-color: transparent;
