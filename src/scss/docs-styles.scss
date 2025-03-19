@@ -33,3 +33,17 @@ li > a {
   color: $_secondary_header_color;
   text-decoration: none;
 }
+
+.link-back {
+  margin-top: 42px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.icon-back {
+  height: 16px;
+  width: 16px;
+  stroke: $_secondary_color;
+  fill: $_secondary_color;
+}
