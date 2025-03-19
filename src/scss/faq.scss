@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
 
 .faq-title-btn {
   display: flex;
+  justify-content: space-between;
 }
 
 .faq-title {
@@ -64,4 +66,43 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.22;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-list-text {
+  max-height: 500px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq {
+    padding: 80px 0;
+  }
+
+  .faq-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .faq-img-accordion {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .faq-img {
+    width: 528px;
+  }
+
+  .faq-list-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.22;
+    padding-bottom: 20px;
+  }
+
+  .faq-list-text {
+    font-size: 16px;
+  }
 }
