@@ -1,6 +1,12 @@
 .hero {
-  padding-top: 155px;
+  padding-top: 72px;
   padding-bottom: 60px;
+}
+
+@include media(desktop) {
+  .hero {
+    padding-top: 155px;
+  }
 }
 .hero-body {
   display: flex;
