@@ -1,18 +1,35 @@
 <header class="header">
   <div class="header-container container">
     <a href="./index" class="logo">
-      <img
-        src="./img/header/logo.png"
-        alt="logo"
-        class="logo-img"
-        width="32"
-        height="32"
-      /><span class="logo-span">Match Villains</span>
+      <picture class="logo-img">
+        <!-- Десктопне зображення -->
+        <source
+          srcset="
+            ./img/header/logo_desk.png    1x,
+            ./img/header/logo_desk@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <!-- Мобільне зображення -->
+        <source
+          srcset="./img/header/logo_mob.png 1x, ./img/header/logo_mob@2x.png 2x"
+          media="(max-width: 1199px)"
+        />
+        <!-- Фallback зображення -->
+        <img
+          src="./img/header/logo_mob.png"
+          alt="logo"
+          width="32"
+          height="32"
+        />
+      </picture>
+      <span class="logo-span">Match Villains</span>
     </a>
 
     <button data-modal-open class="menu-open-btn" type="button" id="toggleMenu">
       <svg
         class="menu-open-btn-icon"
+        class="logo-img"
         width="42"
         height="20"
         aria-label="mobile menu open button"
@@ -24,7 +41,7 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a href="#home" class="nav-list-link">HOME</a>
+          <a href="#hero" class="nav-list-link">HOME</a>
         </li>
         <li class="nav-list-item">
           <a href="#description" class="nav-list-link">GAME DESCRIPTION</a>

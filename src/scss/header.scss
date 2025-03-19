@@ -32,9 +32,15 @@
 .logo {
   display: flex;
   align-items: center;
-  width: 86px;
 }
+
+.logo-img img {
+  border-radius: 12px;
+  display: block;
+}
+
 .logo-img {
+  width: 32px;
   margin-right: 4px;
 }
 
@@ -43,6 +49,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
+  width: 50px;
   color: #ddd6ed;
 }
 
@@ -73,23 +80,21 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {
+  .header-container.container {
     min-width: 1200px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 0;
   }
 
-  .logo {
-    width: 228px;
-  }
-
-  .logo-img {
+  .logo-img img {
     width: 80px;
-    height: 80px;
+    height: auto;
   }
 
   .logo-span {
     font-size: 24px;
+    width: 136px;
   }
 
   .menu-open-btn {
