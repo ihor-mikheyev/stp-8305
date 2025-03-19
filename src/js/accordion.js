@@ -1,3 +1,5 @@
+const spritePath = new URL('../img/sprite.svg', import.meta.url).href;
+
 document.addEventListener('DOMContentLoaded', function () {
   const faqItems = document.querySelectorAll('.faq-item');
 
@@ -11,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (item.classList.contains('open')) {
         text.style.maxHeight = text.scrollHeight + 'px';
-        icon.setAttribute('href', './img/sprite.svg#icon-chevron-up'); // Змінюємо іконку
+        icon.setAttribute('href', `${spritePath}#icon-chevron-up`);
       } else {
         text.style.maxHeight = null;
-        icon.setAttribute('href', './img/sprite.svg#icon-chevron-down'); // Повертаємо назад
+        icon.setAttribute('href', `${spritePath}#icon-chevron-down`);
       }
     });
   });
