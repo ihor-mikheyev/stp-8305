@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
-    const toggleBtn = item.querySelector('.accordion-btn');
-    const answer = item.querySelector('.faq-list-text');
-    const icon = toggleBtn.querySelector('use');
+    const button = item.querySelector('.accordion-btn');
+    const icon = item.querySelector('.accordion-icon use');
+    const text = item.querySelector('.faq-list-text');
 
-    toggleBtn.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
+    button.addEventListener('click', () => {
+      item.classList.toggle('open');
 
-      if (isOpen) {
-        item.classList.remove('open');
-        icon.setAttribute('href', './img/sprite.svg#icon-chevron-down');
+      if (item.classList.contains('open')) {
+        text.style.maxHeight = text.scrollHeight + 'px';
+        icon.setAttribute('href', './img/sprite.svg#icon-chevron-up'); // Змінюємо іконку
       } else {
-        item.classList.add('open');
-        icon.setAttribute('href', './img/sprite.svg#icon-chevron-up');
+        text.style.maxHeight = null;
+        icon.setAttribute('href', './img/sprite.svg#icon-chevron-down'); // Повертаємо назад
       }
     });
   });
