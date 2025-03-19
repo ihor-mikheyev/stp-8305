@@ -6,4 +6,10 @@ const swiper = new Swiper('.myGallerySwiper', {
     nextEl: '#nextGallerySlide',
     prevEl: '#prevGallerySlide',
   },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
