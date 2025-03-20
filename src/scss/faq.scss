@@ -17,7 +17,6 @@
   display: flex;
 }
 
-
 .faq-item {
   border-bottom: solid 0.5px #ffffff4d;
   padding-top: 8px;
@@ -56,14 +55,12 @@
   padding-bottom: 4px;
 }
 
-
 .accordion-btn {
   background-color: transparent;
   stroke: #ddd6ed;
   fill: transparent;
   border: none;
 }
-
 
 .faq-list-text {
   font-family: 'Open Sans', sans-serif;
@@ -82,7 +79,7 @@
 
 @media only screen and (min-width: 1200px) {
   .faq {
-    padding: 80px 0;
+    padding: 120px 0;
   }
 
   .faq-title {
