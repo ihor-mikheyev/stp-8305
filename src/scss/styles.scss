@@ -25,17 +25,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+//.container {
+// max-width: 320px;
+//margin: 0 auto;
+//padding: 0 20px;
+//}
 
 @include media(desktop) {
-  .container {
-    max-width: 1200px;
-    padding: 0 60px;
-  }
+  //.container {
+  //  max-width: 1200px;
+  //  padding: 0 60px;
+  //}
 }
 
 .title {
