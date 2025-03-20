@@ -10,7 +10,7 @@
 }
 .swiper-wrapper {
 }
-.swiper-slide img {
+.gallery .swiper-slide img {
   display: block;
   max-height: 315px;
   border-radius: 24px;
@@ -60,7 +60,7 @@
     margin-bottom: 40px;
   }
 
-  .swiper-slide img {
+  .gallery .swiper-slide img {
     width: 315px;
     max-height: 420px;
   }
