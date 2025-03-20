@@ -1,35 +1,21 @@
 .gallery {
   position: relative;
   height: 100%;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .gallery-title {
+  margin-bottom: 24px;
 }
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.nav-btn {
-}
-.circle-btn {
-}
-.left-btn-icon {
-}
-.right-btn-icon {
-}
-
-@include media(desktop) {
-  .gallery {
-    padding: 120px 0;
-  }
-}
-
 // Swiper
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 540px;
 }
 
 .swiper-slide {
@@ -42,12 +28,38 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 540px;
+  border-radius: 24px;
   object-fit: cover;
 }
 
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery {
+    padding: 120px 60px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .gallery-title {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 540px;
+  }
 }

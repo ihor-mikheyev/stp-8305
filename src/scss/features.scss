@@ -1,7 +1,12 @@
 .features {
-  padding: 60px 0;
+  padding: 60px 20px;
   position: relative;
   height: 100%;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .features-list {
@@ -50,7 +55,7 @@
 }
 @include media(desktop) {
   .features {
-    padding: 120px 0;
+    padding: 120px 60px;
   }
   .features-list {
     width: 100%;

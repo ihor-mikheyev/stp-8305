@@ -1,11 +1,17 @@
 .hero {
-  padding-top: 72px;
-  padding-bottom: 60px;
+  //padding-top: 72px;
+  //padding-bottom: 60px;
+  padding: 72px 20px 60px 20px;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 @include media(desktop) {
   .hero {
-    padding-top: 155px;
+    padding: 155px 60px 100px 60px;
   }
 }
 .hero-body {

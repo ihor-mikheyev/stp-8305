@@ -1,13 +1,18 @@
 footer {
   background-color: $_secondary_bg_color;
+  padding: 60px 20px;
 }
 .footer-body {
   padding: 16px 0;
 }
 
+.footer-text {
+  text-align: right;
+}
+
 @include media(desktop) {
   .footer-body {
-    padding: 80px 0 25px;
+    padding: 80px 60px 25px 60px;
   }
 }
 .footer-list {
