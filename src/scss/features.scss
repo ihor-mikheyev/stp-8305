@@ -43,7 +43,12 @@
     gap: 24px;
   }
   .features-item {
+    max-height: 312px;
     flex-direction: row;
+  }
+
+  .features-item > img {
+    height: 100%;
   }
   .swiper-slide:nth-child(even) > .features-item {
     flex-direction: row-reverse;

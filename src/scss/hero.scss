@@ -38,18 +38,6 @@
   font-size: 48px;
   line-height: 1.2;
 }
-
-@include media(desktop) {
-  .hero-title {
-    font-size: 96px;
-    letter-spacing: 1.2;
-  }
-
-  .hero-text {
-    font-size: 20px;
-    height: fit-content;
-  }
-}
 .hero-text:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -64,4 +52,25 @@
   height: fit-content;
 }
 .play-icon {
+}
+
+@include media(desktop) {
+  .hero-title {
+    font-size: 96px;
+    line-height: 1.2;
+  }
+
+  div.hero-text {
+    font-size: 28px;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-image {
+    margin-bottom: 0 !important;
+  }
+
+  a.hero-link {
+    padding: 18px 0;
+    max-width: 436px;
+  }
 }
