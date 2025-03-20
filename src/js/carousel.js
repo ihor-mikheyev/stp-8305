@@ -4,21 +4,34 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
 
-  if (reviewCards.length === 0) return; // Якщо карток немає, не запускаємо код
+  if (reviewCards.length === 0) return;
 
   let currentIndex = 0;
-  const cardWidth = reviewCards[0].offsetWidth + 8; // Враховуємо gap між картками
 
   function updateCarousel() {
-    const maxOffset = -(reviewCards.length - 1) * cardWidth;
-    let offset = -currentIndex * cardWidth;
+    const cardWidth = reviewCards[0].offsetWidth + 8;
+    const containerWidth = document.querySelector('.carousel').offsetWidth;
+    const visiblePart = (containerWidth - cardWidth) / 2;
 
-    if (offset < maxOffset) {
-      offset = maxOffset; // Запобігаємо виходу за останню картку
-    }
+    let offset = -currentIndex * cardWidth + visiblePart;
 
+    const maxOffset = visiblePart;
+    const minOffset = -(reviewCards.length - 1) * cardWidth + visiblePart;
+
+    if (offset > maxOffset) offset = maxOffset;
+    if (offset < minOffset) offset = minOffset;
+
+    reviewList.style.transition =
+      currentIndex === 0 ? 'none' : 'transform 0.3s ease-in-out';
     reviewList.style.transform = `translateX(${offset}px)`;
   }
+
+  nextBtn.addEventListener('click', function () {
+    if (currentIndex < reviewCards.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
 
   prevBtn.addEventListener('click', function () {
     if (currentIndex > 0) {
@@ -27,10 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  nextBtn.addEventListener('click', function () {
-    if (currentIndex < reviewCards.length - 1) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
+  window.addEventListener('resize', updateCarousel);
+
+  setTimeout(() => {
+    updateCarousel();
+  }, 100);
 });
