@@ -1,11 +1,15 @@
 .hero {
   padding-top: 72px;
   padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @include media(desktop) {
   .hero {
     padding-top: 155px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 .hero-body {
