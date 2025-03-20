@@ -1,12 +1,12 @@
 @import './header.scss';
-
 @import './hero.scss';
 @import './description.scss';
-@import './faq.scss';
 @import './features.scss';
+@import './faq.scss';
 @import './reviews.scss';
-@import './cookie-popup.scss';
+@import './gallery.scss';
 @import './footer.scss';
+@import './cookie-popup.scss';
 @import './modal-menu.scss';
 
 :root {
@@ -26,13 +26,14 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @include media(desktop) {
   .container {
+    max-width: 1200px;
     padding: 0 60px;
   }
 }

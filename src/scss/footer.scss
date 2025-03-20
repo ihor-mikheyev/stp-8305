@@ -24,16 +24,15 @@ footer {
     justify-content: flex-end;
     gap: 16px;
     margin-bottom: 40px;
+    & li:not(:last-child)::after {
+      content: '|';
+      margin-left: 8px;
+    }
   }
 }
 .footer-link {
   font-size: 24px;
   color: $_main_color;
-}
-
-.footer-link::after {
-  content: '|';
-  margin-left: 8px;
 }
 
 .footer-link:last-child::after {

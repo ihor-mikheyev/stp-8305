@@ -1,71 +1,95 @@
 <section id="features" class="features">
   <h2 class="title features-title">Key Features</h2>
-  <ul class="features-list list">
-    <li class="features-item">
-      <div class="features-text text">
-        <div class="features-text-item">
-          <h3>Engaging Match-3 Heist Gameplay:</h3>
-          <p>
-            Solve puzzles to unlock vaults, disable traps, and claim treasures.
-          </p>
-        </div>
-        <div class="features-text-item">
-          <h3>Unique Villainous Characters:</h3>
-          <p>
-            Play as charismatic thieves, each with their own special abilities.
-          </p>
-        </div>
-      </div>
-      <img
-        srcset="img/features/feature01.jpg"
-        src="img/features/feature01.jpg"
-        alt="Feature Image 1"
-      />
-    </li>
-    <li class="features-item">
-      <div class="features-text text">
-        <div class="features-text-item">
-          <h3>Challenging Obstacles & Combos:</h3>
-          <p>
-            Break through security systems and chain powerful moves to clear
-            levels.
-          </p>
-        </div>
-        <div class="features-text-item">
-          <h3>Exciting Storyline:</h3>
-          <p>
-            Follow a thrilling narrative filled with mystery, intrigue, and
-            high-stakes missions.
-          </p>
+  <div class="swiper mySwiper">
+    <div class="features-list swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="features-item">
+          <div class="features-text text">
+            <div class="features-text-item">
+              <h3>Engaging Match-3 Heist Gameplay:</h3>
+              <p>
+                Solve puzzles to unlock vaults, disable traps, and claim
+                treasures.
+              </p>
+            </div>
+            <div class="features-text-item">
+              <h3>Unique Villainous Characters:</h3>
+              <p>
+                Play as charismatic thieves, each with their own special
+                abilities.
+              </p>
+            </div>
+          </div>
+          <img src="img/features/feature-01.png" alt="Feature Image 1" />
         </div>
       </div>
-      <img
-        srcset="img/features/feature02.jpg"
-        src="img/features/feature02.jpg"
-        alt="Feature Image 2"
-      />
-    </li>
-    <li class="features-item">
-      <div class="features-text text">
-        <div class="features-text-item">
-          <h3>Exquisite Visuals & Environments:</h3>
-          <p>
-            Explore luxurious mansions, ancient temples, and high-security
-            museums.
-          </p>
-        </div>
-        <div class="features-text-item">
-          <h3>Daily Heists & Competitive Events:</h3>
-          <p>
-            Compete with players worldwide for exclusive rewards and prestige.
-          </p>
+      <div class="swiper-slide">
+        <div class="features-item">
+          <div class="features-text text">
+            <div class="features-text-item">
+              <h3>Challenging Obstacles & Combos:</h3>
+              <p>
+                Break through security systems and chain powerful moves to clear
+                levels.
+              </p>
+            </div>
+            <div class="features-text-item">
+              <h3>Exciting Storyline:</h3>
+              <p>
+                Follow a thrilling narrative filled with mystery, intrigue, and
+                high-stakes missions.
+              </p>
+            </div>
+          </div>
+          <img src="img/features/feature-02.webp" alt="Feature Image 2" />
         </div>
       </div>
-      <img
-        srcset="img/features/feature03.jpg"
-        src="img/features/feature03.jpg"
-        alt="Feature Image 3"
-      />
-    </li>
-  </ul>
+      <div class="swiper-slide">
+        <div class="features-item">
+          <div class="features-text text">
+            <div class="features-text-item">
+              <h3>Exquisite Visuals & Environments:</h3>
+              <p>
+                Explore luxurious mansions, ancient temples, and high-security
+                museums.
+              </p>
+            </div>
+            <div class="features-text-item">
+              <h3>Daily Heists & Competitive Events:</h3>
+              <p>
+                Compete with players worldwide for exclusive rewards and
+                prestige.
+              </p>
+            </div>
+          </div>
+          <img
+            srcset="img/features/feature-03.jpg"
+            src="img/features/feature03.jpg"
+            alt="Feature Image 3"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <button class="circle-btn" id="prevSlide" type="button">
+        <svg
+          class="left-btn-icon"
+          width="24"
+          height="24"
+          aria-label="carousel scroll button"
+        >
+          <use href="./img/sprite.svg#icon-chevron-left"></use>
+        </svg></button
+      ><button class="circle-btn" id="nextSlide" type="button">
+        <svg
+          class="right-btn-icon"
+          width="24"
+          height="24"
+          aria-label="carousel scroll button"
+        >
+          <use href="./img/sprite.svg#icon-chevron-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
