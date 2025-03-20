@@ -1,0 +1,53 @@
+.gallery {
+  position: relative;
+  height: 100%;
+  padding: 60px 0;
+}
+.gallery-title {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.nav-btn {
+}
+.circle-btn {
+}
+.left-btn-icon {
+}
+.right-btn-icon {
+}
+
+@include media(desktop) {
+  .gallery {
+    padding: 120px 0;
+  }
+}
+
+// Swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  // text-align: center;
+  font-size: 18px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
