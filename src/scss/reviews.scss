@@ -1,5 +1,4 @@
 .review {
-  position: relative;
   background: #1e0e40;
   padding: 60px 0;
 }
@@ -93,10 +92,6 @@
 
 @media only screen and (min-width: 1200px) {
   .review {
-    position: relative;
-    width: 100vw;
-    max-width: 1200px;
-    margin-left: -55%;
     padding: 120px 0;
     background: #1e0e40;
   }
