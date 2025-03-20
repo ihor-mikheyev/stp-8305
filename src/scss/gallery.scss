@@ -10,7 +10,11 @@
 }
 .swiper-wrapper {
 }
-.swiper-slide {
+.swiper-slide img {
+  max-height: 315px;
+
+  border-radius: 24px;
+  overflow: hidden;
 }
 .nav-btn {
 }
