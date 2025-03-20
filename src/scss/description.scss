@@ -3,10 +3,11 @@
   padding-top: 60px;
   background: #1e0e40;
 }
-// .description .container {
-//   padding: 0;
-//   max-width: 100%;
-// }
+
+.container .description {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .description-title {
   font-family: 'Luckiest Guy', cursive;
@@ -43,12 +44,8 @@
 
 @media only screen and (min-width: 1200px) {
   .description {
-    position: relative;
-    width: 100vw;
     max-width: 1200px;
-    margin-left: -55%;
 
-    background-color: #1e0e40;
     padding-top: 120px;
     background: #1e0e40;
   }
